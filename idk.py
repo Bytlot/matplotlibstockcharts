@@ -5,5 +5,7 @@ import matplotlib.pyplot as plt
 
 out = (requests.get("https://www.styvio.com/api/TDOC")).json()
 
-plt.plot(out['maxStockValues'])
-plt.show()
+
+def main():
+    plt.plot(out['yearlyPrices'])
+    plt.show()
